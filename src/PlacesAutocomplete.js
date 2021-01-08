@@ -231,7 +231,7 @@ class PlacesAutocomplete extends React.Component {
   };
 
   handleInputChange = event => {
-    const { value } = event.target;
+    const { value } = event.detail;
     this.props.onChange(value);
     this.setState({ userInputValue: value });
     if (!value) {
